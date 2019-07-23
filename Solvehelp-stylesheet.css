@@ -1,0 +1,589 @@
+
+/* The text */
+#intro-text{
+    margin: 2.7em auto 0 auto;
+    color: white;
+    text-align: center;
+    width: 25em;
+    min-width: 20em;
+}
+#intro-text h1{
+    color: #FF6600;
+    font-size: 350%;
+    font-family: "Geometr415 Blk BT", fantasy;
+}
+#intro-text p{
+    color: inherit;
+    font-size: 160%;
+    font-family: "Indie flower", cursive;
+}
+#readmore-button{
+    display: block;
+    font-size: 90%;
+    font-family: "Futura Bk BT", sans-serif;
+    border: 0.1em solid #FF6600;
+    color: #FF6600;
+    border-radius: 0.5em;
+    width: 7em;
+    text-align: center;
+    margin: 1em auto 1em auto;
+    padding: 0.2em;
+    user-select: none;
+    cursor: default;
+}
+#rm{
+    text-decoration: none;
+    color: inherit;
+}
+#readmore-button:hover{
+    background-color:#FF6600;
+    color: white;
+}
+#readmore-button:active{
+     background-color:#FF6600;
+    color: #00CCFF ;
+    
+}
+#about{
+    margin: 0 2em 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    
+}
+.box{
+    width: 7em;
+    height: 1em;
+    background-color:#FF6600; 
+}
+#about h1{
+    font-family: Playfair display;
+    color: #FF6600;
+}
+.text{
+    max-width: 20em;
+    min-width: 12em;
+    font-family: "century gothic", sans-serif;
+    font-size: 160%;
+    flex-basis: 60em;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: auto;
+}
+.illustration{
+    max-width: 17.5em;
+    flex-basis: 60em;;
+    flex-shrink: 0;
+    margin:auto;
+    padding:auto;
+}
+#more{
+    margin-top: 34em;
+    position: absolute;
+}
+.others{
+    position: absolute;
+    margin-top: 43em;
+    width: 100%;
+    height: 100em;
+}
+#subhead{
+    display: flex;
+    margin: 3em auto 0 auto;
+    width: 100%;
+}
+#subhead h1{
+    padding: 0.3em 0em 0.1em 0em;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 10em;
+    font-family: Playfair display;
+    border-bottom: 0.02em solid black;
+    font-size: 210%;  
+    color: #FF6600;
+}
+.subjects{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em auto 0 auto;
+    width: 100%;
+    padding:auto;
+}
+.cards{
+    height: 18em;
+    width: 18em;
+    background-color: #FF6600;
+    font-family: "century gothic", sans-serif;
+    text-align: center;
+    flex-basis: 20em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border-radius: 5em 5em 5em 5em;
+    
+}
+.cards a{
+    text-decoration: none;
+}
+.cards h1{
+    background-color: black;
+    width: 100%;
+    height: 2em;
+    color: white;
+    margin-top: 0em;
+    text-align: center;
+    padding-top: 0.5em;
+    border-radius: 3em 3em 0 0;
+}
+.maths{
+    margin: 0 2em 1em 4em;
+}
+.chemistry{
+    margin: 0 2em 1em 2em;
+}
+.physics{
+    margin: 0 4em 1em 2em;
+}
+div.cards.maths a div{
+    position: relative;
+    width: 6em;
+    margin: 3.1em auto 0 auto;
+    padding:0.19em;
+    background-color: black;
+    color: #FF6600;
+    border-radius: 0.4em;
+    user-select: none;
+}
+div.cards.maths a div:hover{
+    color: #00CCFF;
+}
+div.cards.chemistry a div{
+    position: relative;
+    width: 6em;
+    margin: 3.2em auto 0 auto;
+    padding:0.19em;
+    background-color: black;
+    color: #FF6600;
+    border-radius: 0.4em;
+    user-select: none;
+}
+div.cards.chemistry a div:hover{
+    color: #00CCFF;
+}
+div.cards.physics a div{
+    position: relative;
+    width: 6em;
+    margin: 4.5em auto 0 auto;
+    padding:0.19em;
+    background-color: black;
+    color: #FF6600;
+    border-radius: 0.4em;
+    user-select: none;
+}
+div.cards.physics a div:hover{
+    color: #00CCFF;
+}
+.cards p{
+    padding: 0.5em;
+}
+
+/* Newsletter*/
+
+#newsletter{
+    background-color: black;
+    height: 12.5%;
+}
+#newsletter div h5{
+    color: white;
+    text-align: center;
+    font-family: "century gothic", sans-serif;
+    width: 30vw;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin: 1em auto 0.3em auto;
+    font-size: 100%;
+}
+#newsletter form p{
+    margin: 0 auto 0 auto;
+    padding:auto;
+    width: 100%;
+}#newsletter form p:focus-within{
+    background-color:;
+}
+#newsletter form p input{
+    margin: 0 auto 0 30%;
+    width: 40%;
+    font-family: "century gothic", sans-serif;
+    text-align: center;
+    font-size: 90%;
+    color:#FF6600 ;
+    height:3em;
+    border: 0em solid #FF6600;
+}
+input#subscribe{
+    color: white!important;
+    font-size: 92% !important;
+    text-transform: uppercase;
+    background-color: #FF6600;
+}
+input#email{
+    margin-top: 0.7em;
+    background-color:#F2DBCB;
+}
+input#name:focus{
+    background-color:#E6E6E6;
+    color: white;
+}input#email:focus{
+    background-color:#E6E6E6;
+    color: white;
+}
+input#subscribe:hover{
+    color: black !important;
+}
+#ln{
+    
+}
+#ln h6{
+   width: 30vw;
+    height: 1.5em;
+    background-color: #FF6600;
+    color: black;
+    text-align: center;
+    padding: auto;
+    font-family: "century gothic", sans-serif;
+    font-size: 170%;
+    margin: 1em auto 1em auto;
+}
+#ln p{
+    margin: 1em auto 1em auto;
+    width: 95vw;
+    height: 20em;
+    border: 0.2em solid black;
+    text-align: center;
+    font-family: "century gothic", sans-serif;
+}
+
+/* FOOTER */
+.ft{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 1em auto;
+}
+.f{
+    width: 16em;
+    background-color: rgba( 192, 192, 192, 0.3);
+    margin: 0.5em;
+    padding: 0.65em;
+    border-radius: 0.4em;
+    flex-grow: 1;
+}
+.ft ul{
+    list-style-type: none;
+}
+.ft a:hover{
+    color: #00CCFF;
+}
+#copyright{
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 1.2em;
+    color: #FF6600;
+}
+.footer{
+    margin: 10em 0 0 0;
+    min-height: 14%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: "century gothic", sans-serif;
+}
+/* Containers*/
+.container.contact-us .footer{
+   vertical-align: bottom;
+    margin-top: 17em;
+}
+.container.contact-us {
+ height: 70vh;
+}.container.blog .footer{
+   vertical-align: bottom;
+    margin-top: 17em;
+}
+.container.blog {
+ height: 70vh;
+}
+.container.fp, .lip, .sp, .sfp, .vdp h1{
+    text-align: center;
+    font-family: "Geometr212 bkcn bt", sans-serif;
+}
+.fpf p{
+    height: 2em;
+    width: 6em;
+   background-color: #FF6600;
+    margin: 2em auto;
+    padding: 1.3em;
+    border-radius: 0.1em;
+    user-select: none;
+    cursor: default;
+}
+.fpf p:hover{
+    background-color: black;
+    color: white;
+}
+.fpf p:active{
+    background-color: green;
+    color: black;
+}
+/*Login page*/
+.container .login-page{
+    margin: 10em auto 0 auto;
+    position: absolute;
+    width: 100%;
+}
+.container{
+    margin: 8.65em auto 0 auto;
+    width: 100%;
+    position: absolute;
+}
+#form-login{
+    margin: 0 auto 0 auto;
+    width: 33.5em;
+    padding: 0 auto 0 auto;
+}
+div.login{
+    margin: 1em auto 0 auto;
+}
+div.login.e{
+    width: 33.5em;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.login.p{
+    width: 33.5em;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.login.s{
+    width: 7.4em;
+    height: 1.8em;
+}
+ form .login input#e{
+    margin: 0 auto 0 auto;
+    width: 40em;
+    border: 0.2em solid #FF6600;
+     height: 3em;
+     border-radius: 0.3em;
+     text-align: center;
+     color: #FF6600;
+     font-family: "century gothic", sans-serif;
+}
+form .login input#e:focus{
+     background-color:#E6E6E6;
+}
+form .login input#p{
+    margin: 0 auto 0 auto;
+    width: 40em;
+    border: 0.2em solid #FF6600;
+    height: 3em;
+    border-radius: 0.3em;
+    text-align: center;
+    color: #FF6600;
+    font-family: "century gothic", sans-serif;
+}form .login input#p:focus{
+         background-color:#E6E6E6;
+}
+form .login input#s{
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    width: 9em;
+    height: 3em;
+}form .login input#s:hover{
+    color: #00CCFF;
+}
+#sign-up{
+    width: 33.5em;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-family: corbel, sans-serif;
+}
+a#sul{
+    text-decoration: none;
+    color: #FF6600;
+}
+#top-of-page{
+    width: 7em;
+    margin: 1em auto 1em auto;
+}
+#top-of-page img{
+    width: 4em;
+    height: 4em;
+    margin: 0 auto 0 1.4em;
+}
+#top-of-page h1{
+    font-family: "century gothic", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Sign up page*/
+.form-sign-up{
+    width: 29.7em;
+    margin: 2em auto 0 auto;
+}
+.sign-up-head h1{
+    width: 15em;
+    height: 1em;
+    margin: 0em auto 0 auto;
+}
+p.sign-up input{
+    width: 18.3em;
+    height: 3em;
+    border: 0.2em solid #FF6600;
+    border-radius: 0.3em;
+    font-family: "century gothic", sans-serif;
+    text-align: center;
+    font-size: 80%;
+    
+}
+p.sign-up input:focus{
+    background-color: #E6E6E6;
+}
+p.sign-up.p input{
+    width: 37em;
+}
+p.sign-up.p{
+    margin: 1em auto 1em auto;
+    width: 31em;
+}
+p.sign-up.s{
+    width: 8em;
+    margin: 0.5em auto 0 auto;
+}
+p.sign-up input[type="submit"]{
+    border: none;
+    border-radius: 0em;
+    width: 10em;
+    background-color: #FF6600;
+    color: white;
+    text-transform: uppercase;
+}
+p.sign-up input[type="submit"]:hover{
+    color: black;
+}
+.sign-up-head{
+    font-family: "century gothic", sans-serif;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+#the-box{
+    box-shadow: 0 0.3em 1em rgb(77, 77, 77);
+    width: 32.5em;
+    margin: 4.5em auto 0 auto;
+    height: 20em;
+}
+.subjects-nav{
+    background-color: black;
+    height: 6em;
+}
+.subjects-nav .sbb{
+    margin: auto;
+    width: 16.2em;
+}
+svg.behind-circles1{
+    margin: 0.5em  auto auto 1.2em;
+    position: absolute;
+    opacity: 0.8;
+}svg.behind-circles2{
+    margin: 0.5em  auto auto 6.4em;
+    position: absolute;
+    opacity: 0.8;
+}
+line{
+    stroke:white;
+    stroke-width:0.2em;
+}
+.bb{
+    position: absolute;
+    height: 2em;
+    margin: 1em auto 0 1.4em;
+    width: 13em;
+}
+.bbc{
+    height: 1em;
+    width: 1em;
+    border: 0.1em solid #FF6600;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: black;
+}
+#circle-1{
+    margin: 0 3.8em auto auto;
+    z-index: 50;
+}
+#circle-2{
+    margin: 0 auto;
+}
+#circle-3{
+    margin: 0 auto auto 3.8em;
+}
+.sb{
+    height: 2.2em;
+    margin: 3em auto auto auto;
+    position: absolute;
+}
+.sbt{
+    display: inline-block;
+    color: white;
+    padding: 0.4em;
+    font-family: "futura bk bt", sans-serif;
+}
+.sbt:hover{
+    border: 0.1em solid #FF6600;
+    background-color: #FF6600;
+    color: #000000;
+}
+#sbt1.sbt{
+    border-radius: 7em 0 0 7em;
+    margin: 0 -4.4 0 auto;
+}
+#sbt2.sbt{
+    border-radius: 0;
+    margin: 0;
+}
+#sbt3.sbt{
+    border-radius: 0 7em 7em 0;
+    margin: 0 auto 0 -4.4;
+}
+.cp{
+     border: 0.1em solid #FF6600;
+    background-color: #FF6600;
+    color: #000000;
+}
+.subjects-page-text{
+    text-align: center;
+    width: 57%;
+    height: 8em;
+    font-size: 2.7em;
+    margin: 0 auto 0 auto;
+    font-family: "Geometr212 bkcn bt", fantasy;
+}
+.subjects-page-text h1{
+   margin: 0em auto;
+}
+.topics{
+    width: 90%;
+    height: 1.2em;
+    text-align: center;
+    padding: 0.4em;
+    border: 0.1em solid #000000;
+    margin: 1em auto auto auto;
+    font-family: "century gothic", sans-serif;
+    font-size: 1.3em;
+    user-select: none;
+    cursor: default;
+    font-weight: bold;
+}
+.topics:hover{
+    background-color: #FF6600;
+    border: 0.1em solid #FF6600;
+    color: #FFFFFF;
+}

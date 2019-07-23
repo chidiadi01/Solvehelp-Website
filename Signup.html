@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta http-equiv="author"
+              content="Chidiadi Anyanwu" />
+        <meta name="description"
+              content="This is just a practice website for Solvehelp, a website that provides educational materials for students to enable them study better" />
+        <meta name="keywords"
+              content="assignments, study, students, maths, physics, chemistry, homeworks, help, learn" />
+        <link type="text/css" rel="stylesheet" href="Solvehelp-stylesheet.css" />
+         <link type="text/css" rel="stylesheet" href="header,-responsive-&-nav-styles.css" />
+        <title>Solvehelp-Sign up</title> 
+    </head>
+    <body>
+        <div class="header">
+            <img id="logo" src="Images/SOLVEHELP-logo-for-website.png" alt="Logo" />
+            <div class="navbar">
+                <ul id="navlist">
+                    <li class="navlist" ><a class="nl" href="index.html">Home</a></li>
+                    <li class="navlist" id="Subjects"><a class="nl" href="Subjects.html">Subjects</a>
+                      <div id="dropdown" >
+                        <ul>
+                            <li class="navdrop"><a class="dl" href="Subject-pages/Maths.html">Maths</a></li>
+                            <li class="navdrop"><a class="dl" href="Subject-pages/Chemistry.html">Chemistry</a></li>
+                            <li class="navdrop"><a class="dl" href="Subject-pages/Physics.html">Physics</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li class="navlist"><a class="nl" href="Blog.html">Blog</a></li>
+                    <li class="navlist"><a class="nl" href="Contact-us.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+         <div class="ham">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="hamburger">
+                <div class="bar bar-1"></div> 
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+            </label>
+        <div id="mobnav">
+            <div class="searchacc">
+                <input type="search"
+                       placeholder="Search"
+                       />
+                    <input type="image" src="Images/magnifying-glass.svg" height="15em" width="5em" />
+                <a id="acc" href="Login.html"><img id="Account-button" title="Account" alt="account" src="Images/userciclr.svg" /></a>
+            </div>
+           <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="Subjects.html">Subjects</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact-us.html">Contact us</a></li>
+          </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div id="the-box">
+                <div class="sign-up-head"><h1>CREATE AN ACCOUNT</h1></div>
+                <div class="form-sign-up">
+                    <form>
+                        <p class="sign-up n"><input type="text" placeholder="First name" /> <input type="text" placeholder="Last name" /> </p>
+                        <p class="sign-up e"><input type="email" placeholder="Enter your email" /> <input type="password" placeholder="Password" /></p>
+                        <p class="sign-up p"><input type="password" placeholder="Confirm password" /></p>
+                        <p class="sign-up s"><input type="submit" value="Sign up" /></p>
+                    </form>
+                </div>
+                <div id="sign-up"><p>If you already have an account, you can <a id="sul" href="Login.html">login</a></p>
+                </div>
+            </div>
+        </div>

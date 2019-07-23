@@ -1,0 +1,363 @@
+body{
+    margin: 0em;
+}
+/* Current page */
+#current-page{
+    color: #FF6600;
+   
+}
+/* Animations */
+@keyframes slideinup {
+    from{
+        transform: translateY(3em);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+/* Styling the header */
+
+.header{
+    margin-top: -0.7em;
+    margin-left: 0em;
+    background-color: black;
+    height: 9em;
+    width: 100%;
+    min-width: 10em;
+    border-bottom: 0.3em solid #FF6600;
+    position: fixed;
+    z-index: 100;
+}
+#logo{
+    height: 5em;
+    width: 5em;
+    display: block;
+    margin: auto;
+}
+li{
+    cursor: pointer;
+}
+#navlist{
+    margin: auto;
+}
+li.navlist{
+    position: relative;
+    padding: 0.2em;
+    display: inline-flex;
+    color: #00CCFF;
+    list-style: none;
+    max-width: 7em;
+    height: 1.48em;
+    font-family:"Futura Bk BT", sans-serif;
+    font-size: 102%;
+    user-select: none;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    margin: 0em auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    }
+#dropdown{
+    margin: 1.7em 0 0 -5.8em;
+    opacity: 0;
+    visibility: hidden;
+}
+#dropdown ul{
+    padding: 0;
+}
+li.navdrop{
+    background-color:black;
+    width: 8.5em;
+    margin-top: 0em;
+    cursor: default;
+    color: inherit;
+    padding: 0.2em;
+    list-style: none;
+    position: relative;
+    margin-left: 0em;
+}
+.navbar{
+    height: 2em;
+    max-width: 55em;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+}
+#subjects{
+    padding-left: 1.5em;
+}
+/* Nav links */
+a.nl{
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.1em;
+    text-align: center;
+    cursor: default;
+}
+a.dl{
+    color: inherit;
+    text-decoration: none;
+    cursor:default;
+}
+
+/*Hover*/
+#subjects:hover #dropdown{
+visibility: visible;
+    opacity: 1;
+    animation-name: slideinup;
+    animation-duration: 250ms;
+}
+li.navlist:hover{
+    background-color:#4D4D4D;  
+}
+li.navlist:active{
+    color:#FF6600; }
+li.navdrop:hover{
+    background-color:#4D4D4D; 
+    }
+    li.navdrop:active{
+    color:#FF6600; }
+/* The body*/
+#intro{
+    margin: 8.5em 0em 0em 0em;
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 32.5em;
+    background-image: url(Images/background-image-for-home.jpg);
+    
+}
+.searchacc{
+    margin: 0.7em 0.3em 0 0;
+    display: inline-flex;
+    height: 2em;
+    float: right;
+}
+.o{
+    margin-top: 1em;
+}
+input[type="search"]{
+    border-radius: 0.5em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: 0.12em solid #FF6600;
+    margin-right: 0.3em;
+}
+input[type="search"]:focus{
+    box-shadow: ;
+    border-color: #00CCFF;
+}
+img#Account-button{
+   height: 2em;
+    width: 2em;
+}
+/* THE HAMBURGER MENU */
+        .ham{
+            position: absolute;
+            margin:5.3em 0 0 0;
+            visibility: hidden;
+            z-index: 100;
+            font-family: "century gothic", sans-serif;
+            width: 100%;
+            height: 100vh;
+        }
+.ham input[type="checkbox"]{
+        visibility: hidden;
+}
+        .hamburger{
+            height: 2em;
+            width: 1.3em;
+            position: fixed;
+        }
+        /* Styling the bars */
+        .hamburger .bar{
+            border: 0.09em;
+            border-radius: 2em;
+            height: 0.25em;
+            width: 1.3em;
+            background-color: #FF6600;
+            position: relative;
+            transition: transform 0.5s ease-out;
+            margin-left: 1em;
+        }
+        .hamburger .bar-1{  
+        }
+        .hamburger .bar-2{
+          margin-top: 0.125em;
+            
+        }
+        .hamburger .bar-3{
+         margin-top: 0.1em;  
+        }    
+        
+        /* The menu list */
+        a{
+          text-decoration: none;
+          color: inherit;
+        }
+        #mobnav ul{
+            list-style: none;
+            margin-top: 3em;
+            padding-left: 0;
+            position: relative;
+            color: skyblue;
+            padding: 0.3em;
+            font-size: 0.9em;
+        }
+        li{
+            padding-top: 0.7em;
+        }
+        #mobnav{
+            display: block;
+            position: fixed;
+            margin: 1.3em 0 0 ;
+            padding: 0 0 0 3em;
+            height: 100%;
+            width: 100%;
+            background-color: rgba( 0,0,0,0.9);
+            transition: transform 250ms ease-in-out;
+            text-align: left;
+            font-size: 100%;
+            visibility: hidden;
+        }
+
+        /* Creating the animations */
+        #toggle:checked~ .hamburger .bar-1{
+            transform: rotate(135deg);
+            margin-top: 0.8em;
+        }
+        #toggle:checked~ .hamburger .bar-2{
+            transform: scale(0.5, 0.15);
+            opacity: 0; 
+            
+        }
+        #toggle:checked~ .hamburger .bar-3{
+            transform: rotate(-135deg);
+            margin-top:  -0.6em;
+        }
+        #toggle:checked~ #mobnav{
+          visibility: visible;
+        }
+#toggle:checked~ #mobnav .searchacc{
+    visibility: visible;
+}
+@media(max-width:70em){
+    .ham{
+        visibility: visible;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+    #newsletter form p input{
+    margin: 0 auto 0 10%;
+    width: 80%;
+    }
+    .maths{
+    margin: 0 auto 1em 0em;
+}
+.chemistry{
+    margin: 0 auto 1em auto;
+}
+.physics{
+    margin: 0 auto 1em auto;
+}
+    #intro{
+        width: 100%;
+    }
+    #intro-text{
+        width: 9em;
+        margin: 0 auto 0 auto;
+    }
+    #About{
+        margin: 0 0 0.5em 0.1em;
+    }
+    #ln {
+        width: 100%;
+    }
+    #ln p{
+        width: 90%;
+    }
+    .searchacc{
+        visibility: hidden;
+    }
+   #mobnav .searchacc{
+        visibility: hidden;
+    }
+    #ln h6 span{
+        color: black;
+    }
+    #ln h6{
+        color: white;
+    }
+    /*Login page responsive*/
+    
+    #form-login{
+        width: auto;
+    }
+    div.login.e{
+        width: 90vw;
+        margin:1em auto 0 auto;
+    }
+    .login.p{
+        width: 90vw;
+        margin: 0.5em auto 0 auto;
+    }
+   
+    form .login input#e{
+        width: 90vw;
+        margin: auto;
+    }
+    form .login input#p{
+        width: 90vw;
+        margin: auto;
+    }
+    form .login input#s{
+        
+    }
+    #sign-up{
+        width: 90%;
+    }
+    .subjects-page-text{
+        font-size: 166%;
+        width: 100%;
+    }
+    /*Sign up page responsive*/
+}
+@media(max-width:95em){
+    .maths{
+    margin: 0 1em 1em 2em;
+}
+.chemistry{
+    margin: 0 1em 1em 1em;
+}
+.physics{
+    margin: 0 2em 1em 1em;
+}
+}
+#mobnav .searchacc{
+    margin:0 3em 1em 0;
+    z-index: 100;
+    width: 90%;
+}
+#mobnav input[type="search"]{
+    border-radius: 0.5em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: 0.12em solid #FF6600;
+    margin-right: 0.3em;
+    z-index: 100;
+    width: 80%;
+}
+#mobnav input[type="search"]:focus{
+    box-shadow: ;
+    border-color: #00CCFF;
+}
+#mobnav img#Account-button{
+   height: 2em;
+    width: 2em;
+}
