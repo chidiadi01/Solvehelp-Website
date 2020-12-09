@@ -277,6 +277,7 @@ font-size: 150%
     #About{
         margin: 0 0 0.5em 0.1em;
     }
+#About h1, p{width: 100%;}
     #ln {
         width: 100%;
     }
