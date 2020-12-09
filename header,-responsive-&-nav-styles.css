@@ -126,7 +126,7 @@ li.navdrop:hover{
     display: block;
     position: absolute;
     width: 100vw;
-    height: 32.5em;
+    height: auto;
     background-image: url(Images/background-image-for-home.jpg);
     
 }
